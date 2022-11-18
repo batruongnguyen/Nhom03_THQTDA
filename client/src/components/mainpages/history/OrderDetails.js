@@ -25,17 +25,15 @@ function OrderDetails() {
             <table>
                 <thead>
                     <tr>
-                        <th>Tên </th>
+                        <th>Tên</th>
+                        <th>Email</th>
                         <th>Địa chỉ</th>
-                        <th>Postal Code</th>
-                        <th>Country Code</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{orderDetails.address.recipient_name}</td>
-                        <td>{orderDetails.address.line1 + " - " + orderDetails.address.city}</td>
-                        <td>{orderDetails.address.postal_code}</td>
+                        <td>{orderDetails.name}</td>
+                        <td>{orderDetails.email.toLowerCase()}</td>
                         <td>{orderDetails.address.country_code}</td>
                     </tr>
                 </tbody>
@@ -45,9 +43,9 @@ function OrderDetails() {
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Products</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
+                        <th>Sản Phẩm</th>
+                        <th>Số Lượng</th>
+                        <th>Thành Tiền</th>
                     </tr>
                 </thead>
                 <tbody>
