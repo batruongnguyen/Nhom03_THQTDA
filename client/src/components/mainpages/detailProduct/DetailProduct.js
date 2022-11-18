@@ -34,7 +34,7 @@ function DetailProduct() {
                     <span>{Intl.NumberFormat('de-DE', { style: 'currency', currency: 'VND' }).format(detailProduct.price)}</span>
                     <p>{detailProduct.description}</p>
                     <p>{detailProduct.content}</p>
-                    <p>Sold: {detailProduct.sold}</p>
+                    <p>Đã bán: {detailProduct.sold}</p>
                     <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)}>
                         Mua Ngay
