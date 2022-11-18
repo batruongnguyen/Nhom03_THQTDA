@@ -28,7 +28,7 @@ export default function PaypalButton(props) {
       var rate = result.data.rates.USD;
       console.log("Rate from API: ", rate);
     } else {
-      var rate = 0.000040298207;
+      rate = 0.000040298207;
       console.log("Can not get rate from");
     }
     return actions.order

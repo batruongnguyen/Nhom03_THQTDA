@@ -87,23 +87,23 @@ function Cart() {
     }
   };
 
-  const paymentDelivery = async () => {
-    const idUser = localStorage.getItem("idUser");
+  // const paymentDelivery = async () => {
+  //   const idUser = localStorage.getItem("idUser");
 
-    const res = await axios.post(
-      "/api/payment",
-      { cart, payerID: "1", address: "none", name: "none", idUser },
-      {
-        headers: { Authorization: token },
-      }
-    );
+  //   const res = await axios.post(
+  //     "/api/payment",
+  //     { cart, payerID: "1", address: "none", name: "none", idUser },
+  //     {
+  //       headers: { Authorization: token },
+  //     }
+  //   );
 
-    if (res.status === 200) {
-      setCart([]);
-      addToCart([]);
-      alert("Thanh toán thành công");
-    }
-  };
+  //   if (res.status === 200) {
+  //     setCart([]);
+  //     addToCart([]);
+  //     alert("Thanh toán thành công");
+  //   }
+  // };
 
   if (cart.length === 0)
     return (
