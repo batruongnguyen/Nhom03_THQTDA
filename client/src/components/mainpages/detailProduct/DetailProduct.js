@@ -29,7 +29,7 @@ function DetailProduct() {
                 <div className="box-detail">
                     <div className="row">
                         <h2>{detailProduct.title}</h2>
-                        <h6>#id: {detailProduct.product_id}</h6>
+                        <h6>Mã: {detailProduct.product_id}</h6>
                     </div>
                     <span>{Intl.NumberFormat('de-DE', { style: 'currency', currency: 'VND' }).format(detailProduct.price)}</span>
                     <p>{detailProduct.description}</p>
